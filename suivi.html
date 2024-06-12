@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facture</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="detail.css">
+
+
+</head>
+
+<body class="factre-body ma">
+    <div class="conainer facture-container" style="background-color: #D0E9EF;">
+        <div class="row">
+            <!-- SideBar -->
+            <div class="col-2 col-md-1 col-lg-2 bg-light">
+                <div class="h-200">
+                    <img src="enval_transparent.png" class="w-100 d-none d-lg-inline" alt="">
+                    <nav>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2 p-2 suivi"><a href="dashboard.html"
+                            class="text-decoration-none text-secondary  d-lg-inline"> <i class="bi bi-grid me-2"></i> </a> <a href="dashboard.html"
+                                  class="text-decoration-none text-secondary d-none d-lg-inline">Dashboard</a></li>
+                          <li class="mb-2 p-2 hover suivi"> <a href="facture.html"
+                            class="text-decoration-none text-secondary  d-lg-inline"><i class="bi bi-person-circle me-2"></i></a><a href="facture.html"
+                                  class="text-decoration-none text-secondary d-none d-lg-inline">Facture</a></li>
+                          <li class="mb-2 p-2 suivi"> <a href="commande.html"
+                            class="text-decoration-none text-secondary  d-lg-inline"> <i class="bi bi-car-front-fill me-2"></i></a></i><a href="commande.html"
+                                  class="text-decoration-none text-secondary d-none d-lg-inline">Commande</a></li>
+                          <li class="mb-2 p-2 suivi"><a href="suivi.html"
+                            class="text-decoration-none text-secondary  d-lg-inline"><i class="bi bi-bag-fill me-2"></i> </a><a href="suivi.html"
+                                  class="text-decoration-none text-secondary d-none  d-lg-inline">Suivi</a></li>
+                          <li class="mb-2 p-2 suivi"><a
+                            href="serviceClient.html"
+                            class="text-decoration-none text-secondary d-lg-inline"><i class="bi bi-chat-right-text-fill me-2"></i> </a><a
+                                  href="serviceClient.html"
+                                  class="text-decoration-none text-secondary d-none d-lg-inline">Service</a></li>
+                      </ul>
+                          
+                      </nav>
+                </div>
+                <div class="h-50 d-flex flex-column justify-content-end " style="margin-top:25vh">
+                    <nav class="mb-4">
+                        <ul class="list-unstyled ms-3">
+                            <li class="mb-2 p-2 suivi"><i class="bi bi-gear me-2"></i></i><a href="#" class="text-decoration-none text-secondary d-none d-lg-inline">Paramètres</a></li>
+                            <li class="mb-2 p-2 suivi"><a href="index.html" class="text-decoration-none text-secondary  d-lg-inline"><i class="bi bi-box-arrow-left me-2"></i></a><a href="index.html" class="text-decoration-none text-secondary d-none d-lg-inline">Déconnexion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- contenue -->
+            <div class="col-10 col-md-11 col-lg-10 contenu pe-0">
+                <!-- NavBar -->
+                <div class="container-fluid py-2 bg-light d-flex justify-content-end align-items-center">
+                    <div class="d-flex me-3">
+                        <i class="bi bi-bell" style="font-size: 1.6rem;"></i>
+                        <div class="bg-danger rounded-circle border border-white border-1"
+                            style="height: 10px; width: 10px;margin-left: -10px;margin-top: 7px;"></div>
+                    </div>
+                    <img src="b.png" alt="" class="me-4" style="height: 45px;">
+                </div>
+                <!-- Corps -->
+                <div class=" mt-3 p-5  mt-9 pe-3" id="facture
+                    " style="background-color: white;
+                    ">
+                    <img class="w-25 " src="lubrifiant.png" alt="">
+                    <h2 class="text-center text-secondary my-5">Rapport d'annalyse(moteur)</h2>
+                    <div class="table-responsive">
+                        <table class="table col-2 text-dark border border-dark">
+                            <tr>
+                                <th colspan="6" class=" py-0" style="background-color: #D0E9EF">Information clients</th>
+                            </tr>
+                            <tr>
+                                <td class="border-0  py-0">Nom du Client:</td>
+                                <td class="border-0  py-0 text-secondary">BOLUDA</td>
+                                <td class="border-0 py-0">Site de travaille</td>
+                                <td class="border-0 py-0 text-secondary">ABDJIAN</td>
+                            </tr>
+                            <tr>
+                                <td class=" border-0 py-0 ">Nom du Navire:</td>
+                                <td class="border-0  py-0 text-secondary">V8 Suprenzo:</td>
+                                <td class="border-0 py-0">Compartiment</td>
+                                <td class="border-0 py-0 text-secondary">Moteur principal Babord</td>
+                            </tr>
+                            <tr>
+                                <td class=" border-0 py-0 ">Marque:</td>
+                                <td class="border-0  py-0 text-secondary">Caterpillar:</td>
+                                <td class="border-0 py-0">Marque huil:</td>
+                                <td class="border-0 py-0 text-secondary">Premium:</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0  py-0">Nmeros de serrie:</td>
+                                <td class="border-0  py-0"></td>
+                                <td class="border-0 py-0">Grade huile:</td>
+                                <td class="border-0 py-0 text-secondary">20W50</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0  py-0">Nmeros de serrie:</td>
+                                <td class="border-0  py-0"></td>
+                                <td class="border-0 py-0">Grade huile:</td>
+                                <td class="border-0 py-0">20W50</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table col-2 text-dark border border-dark">
+                            <tr class="bg-info ">
+                                <td colspan="100" class=" py-0" style="background-color: #D0E9EF;"><strong> Information  Echantillon </strong></td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0 ">code echantilon:</td>
+                                <td class="border-0 border-start  py-0 text-secondary text-center">06-269-030</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">06-196-0014</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">06-115-0016</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">05-316-0020</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0 ">date de prelevement</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">01/09/2022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">11/07/2022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">15/04/2022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary"> 18/11/2021</td>
+                            <tr>
+                                <td class="border-0 w-50 py-0">Date d'annalyse</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">28/092022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">21/072022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">25/04/2022</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">18/11/2021</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0">Compte horaire H:</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0">Ae huile H:</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0">Vidange:</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w50 py-0">Ae huile H:</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w50 py-0">appoint:</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">40</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">29</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">35.7</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">127</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0 w-50 py-0">Filtre changé</td>
+                                <td class="border-0  border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                                <td class="border-0 border-start text-center py-0 text-secondary">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table container3 table-border col- text-dark border-dark border">
+                            <tr style="background-color: #D0E9EF">
+                                <td class="py-0"><strong>parametre</strong></td>
+                                <td class="py-0">Methode</td>
+                                <td class="py-0">Unite</td>
+                                <td class="py-0">Limites</td>
+                                <td class="py-0" class="text-center" colspan="4">resultat</td>
+                            </tr>
+                            <tr>
+                                <td colspan="100" class=" py-0" style="background-color: rgb(196, 194, 194);">
+                                    <strong>Metals/wear/contaminant/additives</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" border-bottom py-0 text-secondary ">aluminium</td>
+                                <td class="border-bottom  py-0 text-secondary ">ASTM D5185</td>
+                                <td class="border-bottom py-0  border-star py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 py-0 border-Start text-secondary"><B /16></B></td>
+                                <td class="border-bottom py-0  py-0 border-start text-secondary  ">1,6</td>
+                                <td class="border-bottom py-0  py-0 border-start text-secondary ">1</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start  text-secondary">1,32</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">chrome</td>
+                                <td class="border-bottom text-secondary py-0">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 text-secondary">
+                                    <5 /25></5>
+                                </td>
+                                <td class="border-bottom py-0  border-start  text-secondary">178</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">204</td>
+                                <td class="border-bottom py-0 border-start text-secondary">141</td>
+                                <td class="border-bottom py-0 border-start text-secondary">28</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary ">Cuivre</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 text-secondary">18/11/2021</td>
+                                <td class="border-bottom py-0 bg-warning border-start ">178</td>
+                                <td class="border-bottom py-0 bg-danger border-start  ">204</td>
+                                <td class="border-bottom py-0 bg-danger border-start  ">141</td>
+                                <td class="border-bottom py-0 bg-danger border-start ">288</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary ">Etain</td>
+                                <td class="border-bottom py-0 text-secondary ">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">0</td>
+                                <td class="border-bottom py-0  border-start ">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">0</td>
+                                <td class="border-bottom py-0 text-secondary border-star ">0,28</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Fer</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">12,06</td>
+                                <td class="border-bottom py-0 border-start text-secondary">13</td>
+                                <td class="border-bottom py-0  border-start text-secondary">5,43</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">10,4</td>
+                                <td class="border-bottom py-0 border-start text-secondary">ppm</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Nickel</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary">1,2</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">1</td>
+                                <td class="border-bottom py-0  border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0  text-secondary">Chrome</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary">1</td>
+                                <td class="border-bottom py-0  border-start text-secondary">0,80</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">0,67</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">sillicium</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>0</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary"></td>
+                                <td class="border-bottom py-0  border-start text-secondary">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">1</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0,80</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0,67</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Titan</td>
+                                <td class="border-bottom py-0 text-secondary">ASTm D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">3,58</td>
+                                <td class="border-bottom py-0 border-start text-secondary">3</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">2,38</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Sillicium</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary"><B /16></B></td>
+                                <td class="border-bottom py-0  border-start text-secondary ">1,6</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">1</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">0</td>
+                                <td class="border-bottom py-0 border-start  text-secondary">1,32</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary text-secondary">Titan</td>
+                                <td class="border-bottom py-0 text-secondary text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary text-secondary"><></</td>
+                                <td class="border-bottom py-0  border-start text-secondary">178</td>
+                                <td class="border-bottom py-0  border-start text-secondary">204</td>
+                                <td class="border-bottom py-0 border-start text-secondary">141</td>
+                                <td class="border-bottom py-0 border-start text-secondary">28</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Argent</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 text-secondary ">18/11/2021</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">178</td>
+                                <td class="border-bottom py-0  border-start text-secondary">204</td>
+                                <td class="border-bottom py-0  border-start text-secondary">141</td>
+                                <td class="border-bottom py-0  border-start text-secondary">288</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary ">cadmium</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">PPM</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary ">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0,28</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Sodium</td>
+                                <td class="border-bottom py-0 text-secondary ">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">12,06</td>
+                                <td class="border-bottom py-0 text-secondary bg-warning"></td>
+                                <td class="border-bottom py-0  text-secondary bg-warning"></td>
+                                <td class="border-bottom py-0  border-start text-secondary bg-warning"></td>
+                                <td class="border-bottom py-0 border-start text-secondary bg-danger"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom text-secondary py-0 ">calciumium</td>
+                                <td class="border-bottom py-0 text-secondary ">ASTM D5185</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary">-</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary">0</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0</td>
+                            </tr>
+                            <td class="border-bottom py-0 text-secondary">Magnesium</td>
+                            <td class="border-bottom py-0 text-secondary">ASTM D5185</td>
+                            <td class="border-bottom py-0 text-secondarytext-secondary">ppm</td>
+                            <td class="border-bottom py-0 text-secondary">-</td>
+                            <td class="border-bottom py-0 border-start text-secondary">3577</td>
+                            <td class="border-bottom py-0 border-start text-secondary ">2985</td>
+                            <td class="border-bottom py-0  border-start text-secondary">1158</td>
+                            <td class="border-bottom py-0  border-start text-secondary">3220</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">phosphore</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D5185</td>0</td>
+                                <td class="border-bottom py-0 text-secondary">ppm</td>
+                                <td class="border-bottom py-0 text-secondary"></td>
+                                <td class="border-bottom py-0  border-start text-secondary ">0</td>
+                                <td class="border-bottom py-0  border-start text-secondary">1</td>
+                                <td class="border-bottom py-0 border-start text-secondary ">0,80</td>
+                                <td class="border-bottom py-0 border-start text-secondary">0,67</td>
+                            </tr>
+                            <tr>
+                                <td class="border- py-0 text-secondary">Zinc</td>
+                                <td class="border- py-0 text-secondary">ASTm D5185</td>
+                                <td class="border- py-0 text-secondary">ppm</td>
+                                <td class="border- py-0 text-secondary ">-</td>
+                                <td class="border- py-0 border-start text-secondary">808</td>
+                                <td class="border- py-0 border-start text-secondary">588</td>
+                                <td class="border- py-0 border-start text-secondary">596</td>
+                                <td class="border- py-0 border-start text-secondary">753</td>
+                            </tr>
+                            <tr>
+                                <td colspan="100" class=" py-0 " style=" background-color:  rgb(196, 194, 194); ;">
+                                    <strong>oil condition/particule count</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Viscosite a 100°</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D445</td>
+                                <td class="border-bottom py-0 text-secondary">mm2/s</td>
+                                <td class="border-bottom py-0 text-secondary">
+                                </td>
+                                <td class="border-bottom py-0  border-start   text-secondary">18,2</td>
+                                <td class="border-bottom py-0 border-start text-secondary">18,1</td>
+                                <td class="border-bottom py-0 border-start text-secondary">23</td>
+                                <td class="border-bottom py-0 border-start text-secondary">20,3</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">TBN</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D2896</td>
+                                <td class="border-bottom py-0 text-secondarytext-secondary">mgKOH/g</td>
+                                <td class="border-bottom py-0 text-secondary"></td>
+                                <td class="border-bottom py-0 border-start text-secondary">5,69</td>
+                                <td class="border-bottom py-0 border-start text-secondary">3,21</td>
+                                <td class="border-bottom py-0 border-start text-secondary">4,47</td>
+                                <td class="border-bottom py-0 border-start text-secondary">9</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Point eclair</td>
+                                <td class="border-bottom py-0 text-secondary">ASTM D2896</td>
+                                <td class="border-bottom py-0 text-secondary">mgKOH/g</td>
+                                <td class="border-bottom py-0 text-secondary">°C</td>
+                                <td class="border-bottom py-0 text-secondary border-start">200</td>
+                                <td class="border-bottom py-0 border-start  text-secondary">220</td>
+                                <td class="border-bottom py-0  border-start text-secondary">182</td>
+                                <td class="border-bottom py-0 border-start text-secondary">218</td>
+                            </tr>
+                            <td class="border-bottom py-0 text-secondary">suie</td>
+                            <td class="border-bottom py-0 text-secondary ">ASTM E2412</td>
+                            <td class="border-bottom py-0 text-secondary">ufm</td>
+                            <td class="border bottom py-0 text-secondary">60</td>
+                            <td class="border-bottom py-0 border-start text-secondary">5,77</td>
+                            <td class="border-bottom py-0  border-start text-secondary ">5,1</td>
+                            <td class="border-bottom py-0 border-start text-secondary ">0</td>
+                            <td class="border-bottom py-0 border-start text-secondary">16,4</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom py-0 text-secondary">Eau</td>
+                                <td class="border-bottom py-0 text-secondary">Crackle Test</td>
+                                <td class="border-bottom py-0 text-secondarytext-secondary">%</td>
+                                <td class="border-bottom py-0 text-secondary"></td>
+                                <td class="border-bottom py-0 border-start text-secondary">N</td>
+                                <td class="border-bottom py-0  border-start text-secondary">N</td>
+                                <td class="border-bottom py-0  border-start text-secondary">N</td>
+                                <td class="border-bottom py-0 border-start text-secondary">N</td>
+                            </tr>
+                            <tr>
+                                <td class="border- py-0 text-secondary">Dilution</td>
+                                <td class="border- py-0  text-secondary"></td>
+                                <td class="border- py-0 text-secondary">-</td>
+                                <td class="border- py-0 text-secondary"></td>
+                                <td class="border- py-0 border-start  bg-warning">N</td>
+                                <td class="border- py-0  border-start text-secondary ">N</td>
+                                <td class="border- py-0  border-start text-secondary">N</td>
+                                <td class="border- py-0 border-start text-secondary">N</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-12 col-md-6 col-lg-6 ">
+                                <div class="d-flex justify-content-end align-items-center" style="background: linear-gradient(90deg,rgb(52, 220, 52), rgb(255, 119, 0), red); 
+                                     height: 200px; 
+                                     width: 100%; padding-right: 30px; font-size: 30px;">
+                                    X
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 h-50 text-align">
+                                <strong>Commentaires :</strong>
+                                Le taux de cuivre reste tres elevé. Le sodium toujour aussi elevé : a suivre.
+                                Verifier ce compartiment et reparer si necessaire. Voir les causes de presence de sodium
+                                danns l'huile.
+                                changer l'huile et le filtre . Refaire un prelevement pour controle.
+                                </p> Diagnostic etabli reserve de representative de l'echantillon et des informatrion
+                                fournies </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

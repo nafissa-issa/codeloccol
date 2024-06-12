@@ -1,0 +1,67 @@
+/* body{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and(max-width: 320px) {
+ button{
+   font-size: 70px
+ }
+} */
+ul li{
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+ul li:hover{
+  background-color:#D0E9EF;
+}
+/* ul li a{
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}  */
+button{
+  width: 7rem;
+  height: 40px;
+  background-color:#60b6c8;
+ border:none;
+border-radius: 4px;
+color: white;
+
+}
+button:hover{
+background-color:#a1e0ec ;
+
+}
+@media screen and (max-width: 320px) {
+  .list_facture {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .commande {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nafissa {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .suivi {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
+
+
+
+
+
+
